@@ -35,7 +35,7 @@ const Navbar = () => {
     <>
       <div className={`w-full flex fixed justify-between py-6 text-sm p-4 items-center z-50 transition-colors duration-300 ${isBlack ? "text-black" : "text-white"}`}>
         <h1>FORK & FLAMES</h1>
-        <h1 onClick={() => setIsOpen(isOpen ? false : true)}>{isOpen ? "CLOSE" : "MENU"}</h1>
+        <h1 className=" cursor-pointer" onClick={() => setIsOpen(isOpen ? false : true)}>{isOpen ? "CLOSE" : "MENU"}</h1>
       </div>
       {isOpen && <Hamburger />}
     </>
